@@ -4,18 +4,26 @@ import java.util.UUID;
 
 public class Cliente {
 
-    private UUID id;
+    private static int countId = 1;
+    private int id;
     private String nombre;
     private String telefono;
     private String direccion;
 
     public Cliente(String nombre, String telefono, String direccion) {
-        this.id = UUID.randomUUID();
+        setId();
         this.nombre = nombre;
         this.telefono = telefono;
         this.direccion = direccion;
     }
 
+    public int getId() {
+        return id;
+    }
+    public void setId() {
+        this.id = countId;
+        countId++;
+    }
     public String getNombre() {
         return nombre;
     }
@@ -38,7 +46,8 @@ public class Cliente {
     @Override
     public String toString() {
         return "Cliente{" +
-                "nombre='" + nombre + '\'' +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
                 ", telefono='" + telefono + '\'' +
                 ", direccion='" + direccion + '\'' +
                 '}';

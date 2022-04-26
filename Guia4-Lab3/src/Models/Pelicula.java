@@ -13,15 +13,15 @@ public class Pelicula {
     private int duracion;
     private String pais;
     private String descripcion;
-    private Audiencia clasAudiencia;
-    private Genero genero;
+    private String clasAudiencia;
+    private String genero;
     private int stock;
     private Boolean alquilada;
 
     public Pelicula(){}
 
     public Pelicula(String titulo, LocalDate fechaLanzamiento, int duracion, String pais,
-                    String descripcion, Audiencia clasAudiencia, Genero genero) {
+                    String descripcion, String clasAudiencia, String genero) {
         setId();
         this.titulo = titulo;
         this.fechaLanzamiento = fechaLanzamiento;
@@ -71,16 +71,16 @@ public class Pelicula {
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
-    public Audiencia getClasAudiencia() {
+    public String getClasAudiencia() {
         return clasAudiencia;
     }
-    public void setClasAudiencia(Audiencia clasAudiencia) {
+    public void setClasAudiencia(String clasAudiencia) {
         this.clasAudiencia = clasAudiencia;
     }
-    public Genero getGenero() {
+    public String getGenero() {
         return genero;
     }
-    public void setGenero(Genero genero) {
+    public void setGenero(String genero) {
         this.genero = genero;
     }
     public int getStock() {

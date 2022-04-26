@@ -1,6 +1,7 @@
 package Models;
 
 public final class Genero {
+
     public static final String ACCION = "Accion";
     public static final String AVENTURA = "Aventura";
     public static final String COMEDIA = "Comedia";
