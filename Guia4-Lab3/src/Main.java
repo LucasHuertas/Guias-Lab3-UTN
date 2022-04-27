@@ -39,7 +39,7 @@ public class Main {
 
         videoClub.alquilarPelicula(peli1,clien1);
         System.out.println(videoClub.getListaAlquileres());
-
+        System.out.println(videoClub.existePelicula(peli5));
     }
 }
 

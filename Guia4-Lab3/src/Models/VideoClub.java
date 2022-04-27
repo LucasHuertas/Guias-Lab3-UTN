@@ -36,6 +36,7 @@ public class VideoClub {
         this.listaAlquileres = listaAlquileres;
     }
 
+
     public void alquilarPelicula (Pelicula pelicula, Cliente cliente){
         if (existePelicula(pelicula)){
             if (pelicula.tieneStock()){
@@ -55,6 +56,10 @@ public class VideoClub {
             }
         }
         return encontrada;
+    }
+
+    public boolean tieneStock (String titulo){
+        return true;
     }
 
     @Override
