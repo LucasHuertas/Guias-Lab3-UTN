@@ -1,6 +1,8 @@
 
 import Models.Cliente;
 import Models.Pelicula;
+import Models.VideoClub;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -27,11 +29,54 @@ public class Main {
         listPeliculas.add(peli2);
         listPeliculas.add(peli3);
         listPeliculas.add(peli4);
-        listPeliculas.add(peli5);
+        //listPeliculas.add(peli5);
         listClientes.add(clien1);
         listClientes.add(clien2);
         listClientes.add(clien3);
 
+        VideoClub videoClub = new VideoClub(listPeliculas, listClientes);
+        //System.out.println(videoClub);
+
+        videoClub.alquilarPelicula(peli1,clien1);
+        System.out.println(videoClub.getListaAlquileres());
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

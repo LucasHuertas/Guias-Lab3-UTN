@@ -96,6 +96,13 @@ public class Pelicula {
         this.alquilada = alquilada;
     }
 
+    public boolean tieneStock (){
+        boolean hayStock = false;
+        if (this.stock > 0)
+            hayStock = true;
+        return hayStock;
+    }
+
     @Override
     public String toString() {
         return "Pelicula{" +
