@@ -16,7 +16,6 @@ public class Pelicula {
     private String clasAudiencia;
     private String genero;
     private int stock;
-    private Boolean alquilada;
 
     public Pelicula(){}
 
@@ -31,7 +30,6 @@ public class Pelicula {
         this.clasAudiencia = clasAudiencia;
         this.genero = genero;
         this.stock = 3;
-        this.alquilada = false;
     }
 
     public int getId() {
@@ -88,12 +86,6 @@ public class Pelicula {
     }
     public void setStock(int stock) {
         this.stock = stock;
-    }
-    public Boolean getAlquilada() {
-        return alquilada;
-    }
-    public void setAlquilada(Boolean alquilada) {
-        this.alquilada = alquilada;
     }
 
     public boolean tieneStock (){
