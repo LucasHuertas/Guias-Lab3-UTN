@@ -8,4 +8,6 @@ public final class Genero {
     public static final String DRAMA = "Drama";
     public static final String HORROR = "Horror";
     public static final String DOCUMENTAL = "Documental";
+
+    public Genero(){}
 }

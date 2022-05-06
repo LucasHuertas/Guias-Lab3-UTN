@@ -8,4 +8,6 @@ public final class Audiencia {
     public static final String R = "R";
     public static final String NC_17 = "NC-17";
     public static final String UNRATED = "UNRATED";
+
+    public Audiencia(){}
 }
